@@ -25,6 +25,8 @@ public class CustomerController {
     @PostMapping("/savedata")
     public ResponseEntity<Customer> saveData(@RequestBody Customer customer)
     {
+
+        //Hello World Bond
         log.info("Trying to save data: "+customer.getCustName());
         return  ResponseEntity.ok(customerServiceImpl.saveData(customer));
     }
